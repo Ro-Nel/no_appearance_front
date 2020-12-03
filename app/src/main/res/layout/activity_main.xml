@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+    <Button android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+
+    <Button android:id="@+id/registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro" />
+
+    <Button android:id="@+id/btPreferenciasCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preferencias Categoria (listar y elejir)" />
+
+    <Button android:id="@+id/btMatchesListar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matches Listar" />
+
+    <Button android:id="@+id/btMatchesAnadir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matches Anadir" />
+
+    <Button android:id="@+id/btChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat" />
+    <Button android:id="@+id/btMensajeria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mensajeria" />
+
+    <Button android:id="@+id/btUsuariosReportadosListar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuarios Reportados Listar" />
+    <Button android:id="@+id/btUsuarioReportadoDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuario Reportado Detalle"/>
+    <Button android:id="@+id/btUsuarioReportadoDesbloqueo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuario Reportado Desbloqueo" />
+    <Button android:id="@+id/btUsuarioReportadoAnadir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuario Reportado Anadir" />
+
+    <Button android:id="@+id/btEditarUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar Usuario" />
+
+    <Button android:id="@+id/btEditarUsuarioContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar Usuario Contrasena" />
+
+    <Button android:id="@+id/btEditarUsuarioCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar Usuario Categorias" />
+
+    <Button android:id="@+id/btUsuarioDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuario Detalle" />
+
+
+    <Button android:id="@+id/btCategoriaAnadir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categoria Anadir" />
+
+    <Button android:id="@+id/btCategoriaEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categoria Eliminar" />
+
+    <Button android:id="@+id/btSubCategoriaAnadir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sub Categoria Anadir" />
+
+    <Button android:id="@+id/btSubCategoriaEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sub Categoria Eliminar" />
+
+
+
+</LinearLayout >
