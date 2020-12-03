@@ -6,13 +6,14 @@ import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Query;
 
 import java.util.List;
 
 public interface SubCategoriesService {
 
-    @GET("/listarsubcategorias/{idCategoria}")
-    Call<List<SubCategory>> getSubCategories();
-
-
+    @GET("/listarsubcategorias/{?}")
+    Call<List<SubCategory>> getSubCategories(
+            @Query("idCategoria")
+            int idCategoria);
 }

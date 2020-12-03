@@ -6,12 +6,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import com.example.proyectoandroid.PreferenciasCategoriaActivity;
+import com.example.proyectoandroid.PreferenciasSubcategoriasActivity;
 import com.example.proyectoandroid.R;
 import com.example.proyectoandroid.model.Category;
 import com.example.proyectoandroid.model.SubCategory;
+import com.squareup.picasso.Picasso;
 import retrofit2.Callback;
 
 import java.util.ArrayList;
@@ -30,27 +34,28 @@ public class SubCategoriesAdapter extends ArrayAdapter <SubCategory> {
     }
 
 
-
-
-
     @NonNull
     @Override
     public View getView(final int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        View v = convertView;
+
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View rowView = layoutInflater.inflate(R.layout.category_list_content, parent, false);
-        CheckBox checkBoxCategory = (CheckBox) rowView.findViewById(R.id.checkBoxCategory);
-        TextView id = (TextView) rowView.findViewById(R.id.id);
-        TextView name = (TextView) rowView.findViewById(R.id.name);
-        id.setText(String.format("Categotia id:%s", categoryList.get(position).getCategoryId()));
-        name.setText(String.format("Categoria nombre:%s", categoryList.get(position).getName()));
+        v = layoutInflater.inflate(R.layout.category_list_content, parent, false);
+        CheckBox checkBoxCategory = (CheckBox) v.findViewById(R.id.checkBoxCategory);
+        ImageView foto = (ImageView) v.findViewById(R.id.foto);
+        TextView name = (TextView) v.findViewById(R.id.name);
+        name.setText(String.format("Nombre:%s", categoryList.get(position).getSubcategoria()));
 
-        checkBoxCategory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                subcategoryChoseeList.add(categoryList.get(position).getCategoryId());
-            }
-        });
+        checkBoxCategory.setOnCheckedChangeListener((PreferenciasSubcategoriasActivity)context);
+        SubCategory subCategory = categoryList.get(position);
+        Picasso.get().load(categoryList.get(position).getFoto())
+                .resize(100,100)
+                .centerCrop()
+                .into(foto);
+        return v;
 
-        return rowView;
     }
+
+
+
 }
