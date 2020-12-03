@@ -65,14 +65,11 @@ public class PreferenciasCategoriaActivity extends AppCompatActivity implements 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         int position = listView.getPositionForView(buttonView);
-        int idCategory =categoryList.get(position).getIdCategoria();
-        System.out.println(listView.getPositionForView(buttonView));
-
-       // Toast.makeText(getApplicationContext(),idCategory,Toast.LENGTH_LONG).show();
-        /*
+        int idCategoria =categoryList.get(position).getIdCategoria();
+        System.out.println(idCategoria);
         Intent intent = new Intent (getApplicationContext(), PreferenciasSubcategoriasActivity.class);
-        intent.putExtra("idCategoria",idCategory));
+        intent.putExtra("idCategoria",String.valueOf(idCategoria));
         startActivityForResult(intent, 200);
-        */
+
     }
 }

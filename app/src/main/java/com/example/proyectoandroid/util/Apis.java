@@ -13,8 +13,8 @@ public class Apis {
         return Cliente.getCliente(URL_001).create(CategoriesService.class);
     }
 
-    public static SubCategoriesService getSubCategoriesService(int idCategoria){
-        return Cliente.getCliente(URL_001+"/"+idCategoria).create(SubCategoriesService.class);
+    public static SubCategoriesService getSubCategoriesService(){
+        return Cliente.getCliente(URL_001).create(SubCategoriesService.class);
     }
 
 

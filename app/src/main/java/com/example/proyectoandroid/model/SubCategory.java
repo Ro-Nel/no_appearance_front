@@ -2,45 +2,47 @@ package com.example.proyectoandroid.model;
 
 public class SubCategory {
 
-    private Integer subcategoryId;
-    private Integer categoryId;
-    private String name;
-    private Integer status;
+    private int idSubcategoria;
+    private String subcategoria;
+    private String foto;
+    private int idCategoria;
 
-    public SubCategory(Integer categoryId, String name) {
-        this.categoryId = categoryId;
-        this.name = name;
+    public SubCategory(int idSubcategoria, String subcategoria, String foto, int idCategoria) {
+        this.idSubcategoria = idSubcategoria;
+        this.subcategoria = subcategoria;
+        this.foto = foto;
+        this.idCategoria = idCategoria;
     }
 
-    public Integer getSubcategoryId() {
-        return subcategoryId;
+    public int getIdSubcategoria() {
+        return idSubcategoria;
     }
 
-    public SubCategory(String name) {
-        this.name = name;
+    public void setIdSubcategoria(int idSubcategoria) {
+        this.idSubcategoria = idSubcategoria;
     }
 
-    public Integer getCategoryId() {
-        return categoryId;
+    public String getSubcategoria() {
+        return subcategoria;
     }
 
-    public void setCategoryId(Integer categoryId) {
-        this.categoryId = categoryId;
+    public void setSubcategoria(String subcategoria) {
+        this.subcategoria = subcategoria;
     }
 
-    public String getName() {
-        return name;
+    public String getFoto() {
+        return foto;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 
-    public Integer getStatus() {
-        return status;
+    public int getIdCategoria() {
+        return idCategoria;
     }
 
-    public void setStatus(Integer status) {
-        this.status = status;
+    public void setIdCategoria(int idCategoria) {
+        this.idCategoria = idCategoria;
     }
 }
