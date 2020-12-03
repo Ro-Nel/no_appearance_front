@@ -58,7 +58,7 @@ public class RegistroActivity extends AppCompatActivity {
     private void registrarCliente() throws ParseException {
 
 //"1992-10-10",
-        Date Nacimiento = Date.valueOf(txNacimiento.getText().toString());
+      //  Date Nacimiento = Date.valueOf(txNacimiento.getText().toString());
 
         String Name = txName.getText().toString();
         String Apellido = txApellido.getText().toString();
