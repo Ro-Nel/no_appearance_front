@@ -23,7 +23,6 @@ public class SubCategoriesAdapter extends ArrayAdapter <SubCategory> {
     private List<SubCategory> categoryList;
     public  static  List<Integer> subcategoryChoseeList = new ArrayList<>();
 
-
     public SubCategoriesAdapter(@NonNull Context context, int resource, @NonNull List<SubCategory> objects) {
         super(context, resource, objects);
         this.context = context;

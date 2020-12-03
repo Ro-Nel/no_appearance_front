@@ -11,10 +11,8 @@ import java.util.List;
 
 public interface SubCategoriesService {
 
-    @GET("/v1/category/subcategories")
-    Call<List<SubCategory>> getSubCategories(
-            @Body Integer categoryId
-    );
+    @GET("/listarsubcategorias/{idCategoria}")
+    Call<List<SubCategory>> getSubCategories();
 
 
 }
