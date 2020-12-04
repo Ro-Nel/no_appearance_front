@@ -76,19 +76,6 @@
             android:layout_marginRight="40dp"
             android:layout_marginTop="10dp"/>
 
-    <Button android:id="@+id/btMatchesAnadir"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:background="@drawable/btn_uno"
-            android:textColor="@drawable/txt_btn_uno"
-            android:layout_gravity="center_horizontal"
-            android:paddingLeft="15dip"
-            android:paddingRight="15dip"
-            android:text="Matches Anadir"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="10dp"/>
-
     <Button android:id="@+id/btChat"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"

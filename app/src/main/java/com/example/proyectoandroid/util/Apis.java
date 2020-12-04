@@ -18,6 +18,10 @@ public class Apis {
         return Cliente.getCliente(URL_001).create(MatchService.class);
     }
 
+    public static ChatService getChatService(){
+        return Cliente.getCliente(URL_001).create(ChatService.class);
+    }
+
 
 
     public static SubCategoriesUserService getSubCategoriesUserService() {

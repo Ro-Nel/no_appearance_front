@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     Button btLogin;
     Button btPreferenciasCategoria;
     Button btMatchesListar;
+    Button btChatListar;
     Button btBienvenida;
 
     @Override
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btLogin = (Button) findViewById(R.id.login);
         btPreferenciasCategoria = (Button) findViewById(R.id.btPreferenciasCategoria);
         btMatchesListar = (Button) findViewById(R.id.btMatchesListar);
+        btChatListar = (Button) findViewById(R.id.btChat);
         btBienvenida = (Button) findViewById(R.id.bienvenida);
 
         btBienvenida.setOnClickListener(new View.OnClickListener() {
@@ -84,6 +86,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btChatListar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (v.getContext(), ChatsActivity.class);
+                startActivityForResult(intent, 200);
+            }
+        });
 
     }
 
