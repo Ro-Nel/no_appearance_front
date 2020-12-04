@@ -16,8 +16,8 @@ import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
 
+    public static int IDCLIENTE;
     Apis apis;
-
 
     EditText txEmail;
     EditText txPassword;
@@ -49,21 +49,22 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "no debe existir campos vacios", Toast.LENGTH_LONG).show();
         } else {
             Cliente nuevoCliente = new Cliente(Email, Password);
-            Call<Boolean> call = apis.clienteService().logincliente(nuevoCliente);
-            call.enqueue(new Callback<Boolean>() {
+            Call<Integer> call = apis.clienteService().logincliente(nuevoCliente);
+            call.enqueue(new Callback<Integer>() {
 
                 @Override
-                public void onResponse(Call<Boolean> call, Response<Boolean> response) {
-                    if(response.body()){
-                        Toast.makeText(LoginActivity.this,"Correcto ",Toast.LENGTH_LONG).show();
-                    }else{
+                public void onResponse(Call<Integer> call, Response<Integer> response) {
+                    if(response.body()==(-1)){
                         Toast.makeText(LoginActivity.this,"Clave o correo incorrectos ",Toast.LENGTH_LONG).show();
+                    }else{
+                        IDCLIENTE = response.body();
+                        Toast.makeText(LoginActivity.this,"Correcto ",Toast.LENGTH_LONG).show();
                     }
 
                 }
 
                 @Override
-                public void onFailure(Call<Boolean> call, Throwable t) {
+                public void onFailure(Call<Integer> call, Throwable t) {
                     Log.e( "Error ",t.getMessage());
                 }
             });

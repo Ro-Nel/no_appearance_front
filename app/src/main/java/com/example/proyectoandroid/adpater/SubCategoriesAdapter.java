@@ -25,7 +25,6 @@ public class SubCategoriesAdapter extends ArrayAdapter <SubCategory> {
 
     private Context context;
     private List<SubCategory> categoryList;
-    public  static  List<Integer> subcategoryChoseeList = new ArrayList<>();
 
     public SubCategoriesAdapter(@NonNull Context context, int resource, @NonNull List<SubCategory> objects) {
         super(context, resource, objects);
@@ -38,20 +37,22 @@ public class SubCategoriesAdapter extends ArrayAdapter <SubCategory> {
     @Override
     public View getView(final int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View v = convertView;
-
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         v = layoutInflater.inflate(R.layout.category_list_content, parent, false);
         CheckBox checkBoxCategory = (CheckBox) v.findViewById(R.id.checkBoxCategory);
         ImageView foto = (ImageView) v.findViewById(R.id.foto);
         TextView name = (TextView) v.findViewById(R.id.name);
+
         name.setText(String.format("Nombre:%s", categoryList.get(position).getSubcategoria()));
 
         checkBoxCategory.setOnCheckedChangeListener((PreferenciasSubcategoriasActivity)context);
         SubCategory subCategory = categoryList.get(position);
+
         Picasso.get().load(categoryList.get(position).getFoto())
                 .resize(100,100)
                 .centerCrop()
                 .into(foto);
+
         return v;
 
     }
