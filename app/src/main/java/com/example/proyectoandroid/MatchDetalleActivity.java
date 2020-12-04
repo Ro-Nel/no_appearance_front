@@ -38,7 +38,7 @@ public class MatchDetalleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_match_detalle);
-        int idMacth= Integer.parseInt(getIntent().getExtras().getString("idMacth"));
+        final int idMacth= Integer.parseInt(getIntent().getExtras().getString("idMacth"));
         int idOtroCliente= Integer.parseInt(getIntent().getExtras().getString("idOtroCliente"));
         listViewSCM = (ListView) findViewById(R.id.listViewSCM);
         NombreApellido = (TextView) findViewById(R.id.NombreApellido);
@@ -48,13 +48,24 @@ public class MatchDetalleActivity extends AppCompatActivity {
         chatRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                guardarchat();
+                guardarchat(idMacth);
             }
         });
     }
 
-    private void guardarchat() {
+    private void guardarchat(int idMacth) {
+        Call<String> call = apis.getChatService().agregarChatPorIdMatch(idMacth);
+        call.enqueue(new Callback<String>() {
+            @Override
+            public void onResponse(Call<String> call, Response<String> response) {
+                Log.i( "agragado","agregado");
+            }
 
+            @Override
+            public void onFailure(Call<String> call, Throwable t) {
+                Log.e( "Error ",t.getMessage());
+            }
+        });
     }
 
     private void listarMatchSubcategorias(int idOtroCliente) {
