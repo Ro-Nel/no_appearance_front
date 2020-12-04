@@ -55,6 +55,8 @@ public class RegistroActivity extends AppCompatActivity {
         });
     }
 
+
+
     private void registrarCliente() throws ParseException {
 
 //"1992-10-10",
