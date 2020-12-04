@@ -18,6 +18,7 @@ public class Apis {
     }
 
 
+
     public static SubCategoriesUserService getSubCategoriesUserService() {
         return Cliente.getCliente(URL_001).create(SubCategoriesUserService.class);
 

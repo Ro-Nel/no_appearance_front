@@ -14,7 +14,7 @@ public interface ClienteService {
     );
 
     @POST("/logincliente")
-    Call<Boolean> logincliente(
+    Call<Integer> logincliente(
             @Body Cliente cliente
     );
 

@@ -70,6 +70,7 @@ public class PreferenciasCategoriaActivity extends AppCompatActivity implements 
         Intent intent = new Intent (getApplicationContext(), PreferenciasSubcategoriasActivity.class);
         intent.putExtra("idCategoria",String.valueOf(idCategoria));
         startActivityForResult(intent, 200);
+        finish();
 
     }
 }
