@@ -1,6 +1,8 @@
 package com.example.proyectoandroid;
 
+import android.content.Intent;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -43,8 +45,15 @@ public class MatchDetalleActivity extends AppCompatActivity {
         vercliente(idMacth,idOtroCliente);
         listarMatchSubcategorias(idOtroCliente);
         chatRegistro = (Button) findViewById(R.id.chatRegistro);
+        chatRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                guardarchat();
+            }
+        });
+    }
 
-
+    private void guardarchat() {
 
     }
 
