@@ -6,101 +6,169 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:background="@drawable/bg_color">
 
+
+    <Button android:id="@+id/bienvenida"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="Bienvenida" />
 
     <Button android:id="@+id/login"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Login" />
 
     <Button android:id="@+id/registro"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Registro" />
 
     <Button android:id="@+id/btPreferenciasCategoria"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Preferencias Categoria (listar y elejir)" />
 
     <Button android:id="@+id/btMatchesListar"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Matches Listar" />
 
     <Button android:id="@+id/btMatchesAnadir"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Matches Anadir" />
 
     <Button android:id="@+id/btChat"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Chat" />
+
     <Button android:id="@+id/btMensajeria"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Mensajeria" />
 
     <Button android:id="@+id/btUsuariosReportadosListar"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Usuarios Reportados Listar" />
+
     <Button android:id="@+id/btUsuarioReportadoDetalle"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Usuario Reportado Detalle"/>
+
     <Button android:id="@+id/btUsuarioReportadoDesbloqueo"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Usuario Reportado Desbloqueo" />
+
     <Button android:id="@+id/btUsuarioReportadoAnadir"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Login"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"/>
             android:text="Usuario Reportado Anadir" />
 
     <Button android:id="@+id/btEditarUsuario"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Editar Usuario" />
 
     <Button android:id="@+id/btEditarUsuarioContrasena"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Editar Usuario Contrasena" />
 
     <Button android:id="@+id/btEditarUsuarioCategorias"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Editar Usuario Categorias" />
 
     <Button android:id="@+id/btUsuarioDetalle"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Usuario Detalle" />
 
-
     <Button android:id="@+id/btCategoriaAnadir"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Categoria Anadir" />
 
     <Button android:id="@+id/btCategoriaEliminar"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Categoria Eliminar" />
 
     <Button android:id="@+id/btSubCategoriaAnadir"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Sub Categoria Anadir" />
 
     <Button android:id="@+id/btSubCategoriaEliminar"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
             android:text="Sub Categoria Eliminar" />
-
-
 
 </LinearLayout >
