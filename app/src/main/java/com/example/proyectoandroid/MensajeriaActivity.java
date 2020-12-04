@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.example.proyectoandroid.adpater.CategoriesAdapter;
 import com.example.proyectoandroid.adpater.MatchesSubCategoriesAdapter;
-import com.example.proyectoandroid.adpater.MensajesAdapter;
+import com.example.proyectoandroid.adpater.*;
 import com.example.proyectoandroid.model.Category;
 import com.example.proyectoandroid.model.MatchSubcategoria;
 import com.example.proyectoandroid.model.Mensaje;
