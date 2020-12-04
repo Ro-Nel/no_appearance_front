@@ -6,7 +6,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".RegistroActivity">
+        tools:context=".RegistroActivity"
+        android:background="@drawable/bg_color">
 
     <TextView android:id="@+id/titulo"
               android:layout_width="fill_parent"
@@ -22,40 +23,69 @@
               android:layout_height="wrap_content"
               android:layout_width="fill_parent"
               android:hint="Nombre"
-              android:gravity="center"/>
+              android:gravity="center"
+              android:textSize="26sp"
+              android:textColor="#311b92"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="40dp"
+              android:layout_marginBottom="20dp"/>
 
     <EditText android:id="@+id/apellido"
               android:layout_height="wrap_content"
               android:layout_width="fill_parent"
               android:hint="Apellidos"
-              android:gravity="center"/>
+              android:gravity="center"
+              android:textSize="26sp"
+              android:textColor="#311b92"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="40dp"
+              android:layout_marginBottom="20dp"/>
 
     <EditText android:id="@+id/nacimiento"
               android:layout_height="wrap_content"
               android:layout_width="fill_parent"
               android:hint="Fecha de Nacimiento"
-              android:gravity="center"/>
+              android:gravity="center"
+              android:textSize="26sp"
+              android:textColor="#311b92"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="40dp"
+              android:layout_marginBottom="20dp"/>
 
     <EditText android:id="@+id/email"
               android:layout_height="wrap_content"
               android:layout_width="fill_parent"
               android:hint="Correo Electronico"
-              android:gravity="center"/>
+              android:gravity="center"
+              android:textSize="26sp"
+              android:textColor="#311b92"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="40dp"
+              android:layout_marginBottom="20dp"/>
 
     <EditText android:id="@+id/password"
               android:layout_height="wrap_content"
               android:layout_width="fill_parent"
               android:gravity="center"
-              android:hint="Contraseña"/>
+              android:hint="Contraseña"
+              android:textSize="26sp"
+              android:textColor="#311b92"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="40dp"
+              android:layout_marginBottom="20dp"/>
 
 
     <Button android:id="@+id/registro"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/btn_uno"
+            android:textColor="@drawable/txt_btn_uno"
             android:text="Registro"
-            android:layout_gravity="center_horizontal"
-            android:paddingLeft="15dip"
-            android:paddingRight="15dip"/>
+            android:textSize="20sp"
+            android:fontFamily="@font/akronim"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="10dp"/>
 
 
 </LinearLayout>

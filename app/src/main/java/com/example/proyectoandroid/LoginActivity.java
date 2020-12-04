@@ -1,5 +1,6 @@
 package com.example.proyectoandroid;
 
+import android.content.Intent;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -21,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText txEmail;
     EditText txPassword;
+    Button btLogin;
     Button btRegistro;
 
     @Override
@@ -30,11 +32,21 @@ public class LoginActivity extends AppCompatActivity {
 
         txEmail = (EditText) findViewById(R.id.email);
         txPassword = (EditText) findViewById(R.id.password);
-        btRegistro = (Button) findViewById(R.id.login);
-        btRegistro.setOnClickListener(new View.OnClickListener() {
+        btLogin = (Button) findViewById(R.id.login);
+        btRegistro = (Button) findViewById(R.id.registro);
+
+        btLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 logearUsuario();
+            }
+        });
+
+        btRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (v.getContext(), RegistroActivity.class);
+                startActivityForResult(intent, 200);
             }
         });
 

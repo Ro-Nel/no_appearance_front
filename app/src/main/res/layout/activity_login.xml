@@ -6,34 +6,78 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".LoginActivity">
+        tools:context=".LoginActivity"
+        android:gravity="center"
+        android:background="@drawable/bg_color">
 
-    <TextView
+
+    <TextView android:id="@+id/titulo"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dip"
+              android:layout_marginBottom="5dip"
+              android:text="Login"
+              android:gravity="center"
+              android:textSize="70dip"
+              android:fontFamily="@font/akronim"
+              android:textColor="#7e57c2"/>
+    <ImageView
+            android:id="@+id/logoImagenView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="32dp"
-            android:text="Correo" />
+            android:layout_height="267dp"
+            app:srcCompat="@drawable/klipartz_com"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="20dp"/>
 
     <EditText android:id="@+id/email"
-              android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:textSize="32dp"
-              android:text="correo" />
+              android:layout_width="fill_parent"
+              android:hint="Correo"
+              android:gravity="center"
+              android:textSize="26sp"
+              android:textColor="#311b92"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="40dp"
+              android:layout_marginBottom="10dp"/>
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="32dp"
-            android:text="Password" />
+
 
     <EditText android:id="@+id/password"
-              android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:textSize="32dp"
-              android:text="Password" />
+              android:layout_width="fill_parent"
+              android:hint="Contraseña"
+              android:gravity="center"
+              android:textSize="26sp"
+              android:textColor="#311b92"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="40dp"
+              android:layout_marginBottom="20dp"/>
+
 
     <Button android:id="@+id/login"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login" />
+            android:layout_width="match_parent"
+            android:background="@drawable/btn_uno"
+            android:textColor="@drawable/txt_btn_uno"
+            android:text="Ingresar"
+            android:textSize="20sp"
+            android:fontFamily="@font/akronim"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="15dp"/>
+
+    <Button android:id="@+id/registro"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/btn_uno"
+            android:textColor="@drawable/txt_btn_uno"
+            android:text="Registrar"
+            android:textSize="20sp"
+            android:fontFamily="@font/akronim"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="80dp"/>
 </LinearLayout>
