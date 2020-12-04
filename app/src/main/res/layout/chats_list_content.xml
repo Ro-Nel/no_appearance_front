@@ -5,8 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        tools:context=".MatchesActivity"
-        android:background="@drawable/bg_color">
+        tools:context=".MatchesActivity">
 
             <TextView
                     android:id="@+id/twPersonaChat"
