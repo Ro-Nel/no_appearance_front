@@ -11,9 +11,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".PreferenciasSubcategoriasActivity">
+        <activity android:name=".MatchDetalleActivity">
         </activity>
-        <activity android:name=".MatchesListarActivity">
+        <activity android:name=".MatchesActivity">
+        </activity>
+        <activity android:name=".PreferenciasSubcategoriasActivity">
         </activity>
         <activity android:name=".PreferenciasSubcategories">
         </activity>

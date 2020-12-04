@@ -1,9 +1,6 @@
 package com.example.proyectoandroid.util;
 
-import com.example.proyectoandroid.service.CategoriesService;
-import com.example.proyectoandroid.service.SubCategoriesService;
-import com.example.proyectoandroid.service.SubCategoriesUserService;
-import com.example.proyectoandroid.service.ClienteService;
+import com.example.proyectoandroid.service.*;
 
 public class Apis {
 
@@ -15,6 +12,10 @@ public class Apis {
 
     public static SubCategoriesService getSubCategoriesService(){
         return Cliente.getCliente(URL_001).create(SubCategoriesService.class);
+    }
+
+    public static MatchService getMatchService(){
+        return Cliente.getCliente(URL_001).create(MatchService.class);
     }
 
 

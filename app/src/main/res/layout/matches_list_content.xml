@@ -4,43 +4,16 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".PreferenciasCategoriaActivity">
-
-    <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-        <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/button"
-                android:layout_weight="1"/>
-
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+        android:orientation="horizontal"
+        tools:context=".MatchesActivity">
 
             <TextView
-                    android:id="@+id/id"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="id"
-                    android:textSize="20dp"/>
-
-            <TextView
-                    android:id="@+id/name"
-                    android:layout_width="match_parent"
+                    android:id="@+id/twPersona"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="name"
                     android:textSize="20dp"/>
 
-        </LinearLayout>
-
-    </LinearLayout>
 
 
 

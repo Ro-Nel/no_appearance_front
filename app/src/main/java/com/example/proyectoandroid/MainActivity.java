@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     Button btRegistro;
     Button btLogin;
     Button btPreferenciasCategoria;
-
+    Button btMatchesListar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         btRegistro = (Button) findViewById(R.id.registro);
         btLogin = (Button) findViewById(R.id.login);
         btPreferenciasCategoria = (Button) findViewById(R.id.btPreferenciasCategoria);
+        btMatchesListar = (Button) findViewById(R.id.btMatchesListar);
 
         btRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +59,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, 200);
             }
         });
+        btPreferenciasCategoria.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (v.getContext(), PreferenciasCategoriaActivity.class);
+                startActivityForResult(intent, 200);
+            }
+        });
+        btMatchesListar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (v.getContext(), MatchesActivity.class);
+                startActivityForResult(intent, 200);
+            }
+        });
+
 
     }
 
