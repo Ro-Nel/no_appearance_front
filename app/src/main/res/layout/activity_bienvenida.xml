@@ -45,7 +45,8 @@
             android:textSize="46sp"
             android:fontFamily="@font/akronim"
             tools:ignore="MissingConstraints"
-            android:textColor="#5e35b1" app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#5e35b1"
+            app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="100dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
