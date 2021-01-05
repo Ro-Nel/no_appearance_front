@@ -71,6 +71,10 @@ public class LoginActivity extends AppCompatActivity {
                     }else{
                         IDCLIENTE = response.body();
                         Toast.makeText(LoginActivity.this,"Correcto ",Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent (getApplicationContext(), PreferenciasCategoriaActivity.class);
+                        //intent.putExtra("idCategoria",String.valueOf(idCategoria));
+                        startActivityForResult(intent, 200);
+                        finish();
                     }
 
                 }

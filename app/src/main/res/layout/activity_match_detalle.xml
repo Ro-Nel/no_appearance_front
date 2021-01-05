@@ -6,8 +6,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MatchDetalleActivity">
-
+        tools:context=".MatchDetalleActivity"
+        android:background="@drawable/bg_color">
     <TextView android:id="@+id/titulo"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
@@ -15,8 +15,10 @@
               android:layout_marginBottom="5dip"
               android:text="Hiciste match con:"
               android:gravity="center"
-              android:textSize="30dip"
-              android:textColor="#0b84aa"/>
+              android:textSize="40dip"
+              android:fontFamily="@font/akronim"
+              android:textColor="#7e57c2"/>
+
 
     <TextView android:id="@+id/NombreApellido"
               android:layout_height="wrap_content"
@@ -24,21 +26,24 @@
               android:textSize="30dip"
               android:gravity="center"/>
 
-
-    <TextView
+    <TextView android:id="@+id/titulo2"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
               android:layout_marginTop="10dip"
               android:layout_marginBottom="5dip"
               android:text="Cosas en comun:"
               android:gravity="center"
-              android:textSize="30dip"
-              android:textColor="#0b84aa"/>
+              android:textSize="40dip"
+              android:fontFamily="@font/akronim"
+              android:textColor="#7e57c2"/>
+
 
     <ListView
             android:id="@+id/listViewSCM"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
     </ListView>
 
 

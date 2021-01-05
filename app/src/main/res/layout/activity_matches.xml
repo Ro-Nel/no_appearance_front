@@ -6,13 +6,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MatchesActivity">
+        tools:context=".MatchesActivity"
+        android:background="@drawable/bg_color">
 
-
+    <TextView android:id="@+id/titulo"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dip"
+              android:layout_marginBottom="5dip"
+              android:text="Matches"
+              android:gravity="center"
+              android:textSize="70dip"
+              android:fontFamily="@font/akronim"
+              android:textColor="#7e57c2"/>
     <ListView
             android:id="@+id/listViewMacth"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
     </ListView>
 
 

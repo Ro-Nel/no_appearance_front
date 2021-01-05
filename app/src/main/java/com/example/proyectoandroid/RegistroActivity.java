@@ -2,6 +2,7 @@ package com.example.proyectoandroid;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -162,14 +163,19 @@ public class RegistroActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(Call<String> call, Response<String> response) {
                     Log.i("User............................ ", "Creado " + response.body());
-                }
 
+                    //System.out.println(idCategoria);
+                    Intent intent = new Intent (getApplicationContext(), LoginActivity.class);
+                    //intent.putExtra("idCategoria",String.valueOf(idCategoria));
+                    startActivityForResult(intent, 200);
+                    finish();
+                }
                 @Override
                 public void onFailure(Call<String> call, Throwable t) {
                     Log.i("User............................ ", "Error "+ t.toString());
 
                 }
-            });
+            });Toast.makeText(this, "Su registro fue exitoso", Toast.LENGTH_LONG).show();
         }
     }
 
